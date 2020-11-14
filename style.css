@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+
+h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-style: bold;
+}
+
+body {
+  background: yellowgreen;
+}
+
+form button {
+  color: #bb992b;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #bb992b;
+  color: white;
+  border-radius: 5px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  max-width: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+li:hover {
+  background-color: darkgrey;
+}
+
+#container button {
+  padding: 0.2rem;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  border: none;
+  background: white;
+  color: #bb992b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+#container button:hover {
+  background-color: #bb992b;
+  color: white;
+  border-radius: 5px;
+}
+
+.checked {
+  text-decoration: line-through;
+  background: black;
+  color: grey;
+}
