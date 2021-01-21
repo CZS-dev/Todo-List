@@ -1,0 +1,25 @@
+@import "form";
+@import "container";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: yellowgreen;
+}
+
+header {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-style: bold;
+}

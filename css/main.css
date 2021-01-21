@@ -1,10 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-header,
 form {
   min-height: 20vh;
   display: flex;
@@ -20,19 +13,8 @@ form button {
   background: white;
 }
 
-h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-style: bold;
-}
-
-body {
-  background: yellowgreen;
-}
-
 form button {
   color: #bb992b;
-  background: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -48,7 +30,8 @@ form button:hover {
   justify-content: center;
   align-items: center;
 }
-li {
+
+#container li {
   max-width: auto;
   display: flex;
   justify-content: space-between;
@@ -60,7 +43,7 @@ li {
   border-radius: 5px;
 }
 
-li:hover {
+#container li:hover {
   background-color: darkgrey;
 }
 
@@ -82,8 +65,32 @@ li:hover {
   border-radius: 5px;
 }
 
-.checked {
+#container .checked {
   text-decoration: line-through;
   background: black;
   color: grey;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: yellowgreen;
+}
+
+header {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-style: bold;
+}
+/*# sourceMappingURL=main.css.map */

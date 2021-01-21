@@ -1,40 +1,40 @@
-// SELECTORS 
+// SELECTORS
 
-const Input = document.getElementById('input');
-const Button = document.getElementById('button');
-const List = document.getElementById('list');
+const Input = document.getElementById("input");
+const Button = document.getElementById("button");
+const List = document.getElementById("list");
 
 // EVENT LISTENER
 
-Button.addEventListener('click', createTasks);
+Button.addEventListener("click", createTasks);
 
 // CREATE TASKS
 
-function createTasks (e) {
-    e.preventDefault();
-if (Input.value === '') {
+function createTasks(e) {
+  e.preventDefault();
+  if (Input.value === "") {
     alert("Write a task!");
-}else{
-    const newTask = document.createElement('li');
+  } else {
+    const newTask = document.createElement("li");
     newTask.innerText = Input.value;
-    newTask.className = 'li';
+    newTask.className = "li";
     List.appendChild(newTask);
-    Input.value = '';
+    Input.value = "";
 
-// TRASH BUTTON
+    // TRASH BUTTON
 
-    const trashdButton = document.createElement('button');
+    const trashdButton = document.createElement("button");
     trashdButton.innerHTML = '<i class="fas fa-trash"></i>';
     newTask.appendChild(trashdButton);
 
-// CHECKED TASKS
+    // CHECKED TASKS
 
-    newTask.addEventListener('click', (e) => newTask.classList.toggle('checked'));
-    
+    newTask.addEventListener("click", (e) =>
+      newTask.classList.toggle("checked")
+    );
 
-// REMOVE TASKS    
-    
-    trashdButton.addEventListener('click', (e) => List.removeChild(newTask));
-       
-}
+    // REMOVE TASKS
+
+    trashdButton.addEventListener("click", (e) => List.removeChild(newTask));
+  }
 }

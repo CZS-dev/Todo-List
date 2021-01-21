@@ -1,0 +1,40 @@
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    max-width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    margin: 1rem;
+    border-radius: 5px;
+    &:hover {
+      background-color: darkgrey;
+    }
+  }
+  button {
+    padding: 0.2rem;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    border: none;
+    background: white;
+    color: #bb992b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    &:hover {
+      background-color: #bb992b;
+      color: white;
+      border-radius: 5px;
+    }
+  }
+  .checked {
+    text-decoration: line-through;
+    background: black;
+    color: grey;
+  }
+}
